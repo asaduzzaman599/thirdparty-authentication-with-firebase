@@ -19,6 +19,7 @@ function App() {
       <UserContext.Provider value={[user, setUser]}>
         <Routes>
           <Route path='/' element={<SignIn></SignIn>}></Route>
+          <Route path='/signin' element={<SignIn></SignIn>}></Route>
           <Route path='/profile' element={<Profile></Profile>}></Route>
         </Routes>
       </UserContext.Provider>

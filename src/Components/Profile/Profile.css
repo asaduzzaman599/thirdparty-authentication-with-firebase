@@ -23,6 +23,22 @@
 h3{
     color:white;
 }
+.profile img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.profile button{
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    font-weight: 600;
+    padding: 8px 10px;
+    margin-top:20px;
+}
+h2{
+    color:rgba(0, 0, 0, 0.368);
+}
 
 @media screen and (max-width:550px) {
     .signin-container{
