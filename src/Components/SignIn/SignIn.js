@@ -25,6 +25,7 @@ const SignIn = () => {
                 console.warn(error);
                 // ...
             });
+        }
 
     const handleGithubSignUp = () => {
         const githubProvider = new GithubAuthProvider();
@@ -50,7 +51,7 @@ const SignIn = () => {
             <div className="signin-container">
                 <h3>Sign in</h3>
                 <button onClick={handleGoogleSignUp} style={{ backgroundColor: "#DB4437" }}>Sign in With Google</button>
-                <button style={{ backgroundColor: "#333333" }}>Sign in With Github</button>
+                <button onClick={handleGithubSignUp} style={{ backgroundColor: "#333333" }}>Sign in With Github</button>
                 <button style={{ backgroundColor: "#4267B2" }}>Sign in With Facebook</button>
             </div>
 
