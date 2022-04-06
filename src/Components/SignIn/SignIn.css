@@ -1,0 +1,43 @@
+.sign-in{
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, rgb(44, 41, 41), rgb(195, 186, 186));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.signin-container{
+    width: 50%;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.278);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signin-container button{
+    width: 200px;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+
+.signin-container button:hover{
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.245);
+    font-weight: 600;
+}
+h3{
+    color:white;
+}
+
+@media screen and (max-width:550px) {
+    .signin-container{
+        width: 80%;
+    }
+}

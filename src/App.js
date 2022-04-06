@@ -10,7 +10,7 @@ import { createContext, useState } from 'react';
   function App() {
     const [user,setUser] = useState({});
   return (
-    <UserContext.Provider className="App" value={[user,setUser]}>
+    <UserContext.Provider  value={[user,setUser]}>
       <Routes>
         <Route path='/' element={<SignIn></SignIn>}></Route>
         <Route path='/profile' element={<Profile></Profile>}></Route>
