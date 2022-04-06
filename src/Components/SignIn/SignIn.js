@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from '../../App';
 import './SignIn.css'
 const SignIn = () => {
+    const auth = useContext(AuthContext);
     return (
         <div className='sign-in'>
             <div className="signin-container">

@@ -3,8 +3,11 @@ import './Profile.css'
 
 const Profile = () => {
     return (
-        <div>
-            <h3>profile</h3>
+        <div className='profile'>
+            <div className="profile-container">
+            <h3>Profile</h3>
+            </div>
+
         </div>
     );
 };

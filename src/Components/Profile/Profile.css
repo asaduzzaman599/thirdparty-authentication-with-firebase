@@ -1,0 +1,31 @@
+.profile{
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, rgb(44, 41, 41), rgb(195, 186, 186));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.profile-container{
+    width: 50%;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.141);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h3{
+    color:white;
+}
+
+@media screen and (max-width:550px) {
+    .signin-container{
+        width: 80%;
+    }
+}
