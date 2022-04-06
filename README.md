@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Third party authentication with firebase
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Site [Click Here](https://third-party-auth-asaduzzaman599.netlify.app/).
 

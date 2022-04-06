@@ -1,4 +1,4 @@
-import { GithubAuthProvider, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { FacebookAuthProvider, GithubAuthProvider, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext, UserContext } from '../../App';
@@ -14,7 +14,7 @@ const SignIn = () => {
             .then((result) => {
 
                 const user = result.user;
-                console.log(user)
+                
                 setUser(user);
 
                 navigate('/profile')
@@ -33,7 +33,7 @@ const SignIn = () => {
             .then((result) => {
 
                 const user = result.user;
-                console.log(user)
+               
                 setUser(user);
 
                 navigate('/profile')
@@ -46,13 +46,35 @@ const SignIn = () => {
             });
     }
 
+    
+    const handleFacebookSignUp = () => {
+
+        alert('Soory! We are not allowing Facebook Login :( ')
+        /* const FacebookProvider = new FacebookAuthProvider();
+        signInWithPopup(auth, FacebookProvider)
+            .then((result) => {
+
+                const user = result.user;
+               
+                setUser(user);
+
+                navigate('/profile')
+
+
+            }).catch((error) => {
+                // Handle Errors here.
+                console.warn(error);
+                // ...
+            }); */
+        }
+
     return (
         <div className='sign-in'>
             <div className="signin-container">
                 <h3>Sign in</h3>
                 <button onClick={handleGoogleSignUp} style={{ backgroundColor: "#DB4437" }}>Sign in With Google</button>
                 <button onClick={handleGithubSignUp} style={{ backgroundColor: "#333333" }}>Sign in With Github</button>
-                <button style={{ backgroundColor: "#4267B2" }}>Sign in With Facebook</button>
+                <button onClick={handleFacebookSignUp} style={{ backgroundColor: "#4267B2" }}>Sign in With Facebook</button>
             </div>
 
         </div>
