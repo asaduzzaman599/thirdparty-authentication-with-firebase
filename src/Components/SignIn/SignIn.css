@@ -11,6 +11,7 @@
 .signin-container{
     width: 50%;
     height: 500px;
+    padding: 10px;
     background: rgba(241, 230, 230, 0.434);
     border-radius: 10px;
     display: flex;

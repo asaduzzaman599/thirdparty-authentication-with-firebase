@@ -7,5 +7,5 @@
 - with a Simple profile and logout button to loggout from app.  
 
 ##Live Site [Click Here](https://third-party-auth-asaduzzaman599.netlify.app/).
-##Live site Link :
+##Live site Link :(https://third-party-auth-asaduzzaman599.netlify.app/)
 

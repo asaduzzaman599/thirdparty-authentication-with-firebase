@@ -22,7 +22,7 @@ const ForgetPassword = () => {
     return (
         <div className='forget-password'>
         <div className="forget-password-container">
-            <div className='back-button' onClick={()=>navigate(-1)}>
+            <div className='back-button' onClick={()=>navigate('/signin')}>
             <img src="https://img.icons8.com/fluency/344/circled-left-2.png" alt="" />
             </div>
             <h3>Forgot Password</h3>
