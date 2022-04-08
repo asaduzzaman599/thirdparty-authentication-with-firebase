@@ -2,7 +2,7 @@
     min-height: 100vh;
     width: 100%;
     padding: 20px;
-    background-image: linear-gradient(to bottom right, rgb(44, 41, 41), rgb(195, 186, 186));
+    background-image: linear-gradient(to bottom right, rgb(235, 146, 63), rgb(192, 136, 136), rgb(235, 146, 63));
     display: flex;
     align-items: center;
     justify-content: center;

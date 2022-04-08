@@ -10,7 +10,7 @@ const Profile = () => {
     const {displayName,photoURL} =user;
     const navigate = useNavigate();
 
-    console.log('photoURL',photoURL)
+    
     useEffect(()=>{
         
     if(!user.uid){

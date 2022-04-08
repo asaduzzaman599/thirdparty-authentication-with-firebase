@@ -8,6 +8,7 @@ import app from './firebase.init';
 import { getAuth } from "firebase/auth";
 import SignUp from './Components/SignUp/SignUp';
 import ForgetPassword from './Components/ForgetPassword/ForgetPassword';
+import toast, { Toaster } from 'react-hot-toast';
 
 export const UserContext = createContext();
 export const AuthContext = createContext()
@@ -19,6 +20,8 @@ function App() {
   return (
     <AuthContext.Provider value={auth}>
       <UserContext.Provider value={[user, setUser]}>
+        
+      <Toaster />
         <Routes>
           <Route path='/' element={<SignIn></SignIn>}></Route>
           <Route path='/signin' element={<SignIn></SignIn>}></Route>
