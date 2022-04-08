@@ -6,6 +6,8 @@ import Profile from './Components/Profile/Profile';
 import { createContext, useState } from 'react';
 import app from './firebase.init';
 import { getAuth } from "firebase/auth";
+import SignUp from './Components/SignUp/SignUp';
+import ForgetPassword from './Components/ForgetPassword/ForgetPassword';
 
 export const UserContext = createContext();
 export const AuthContext = createContext()
@@ -20,6 +22,8 @@ function App() {
         <Routes>
           <Route path='/' element={<SignIn></SignIn>}></Route>
           <Route path='/signin' element={<SignIn></SignIn>}></Route>
+          <Route path='/signup' element={<SignUp></SignUp>}></Route>
+          <Route path='/forget-password' element={<ForgetPassword></ForgetPassword>}></Route>
           <Route path='/profile' element={<Profile></Profile>}></Route>
         </Routes>
       </UserContext.Provider>
